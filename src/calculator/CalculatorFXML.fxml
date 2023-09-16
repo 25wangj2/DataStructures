@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="calculator.CalculatorController">
+    <Label fx:id="display" text="0"/>
+    <GridPane fx:id="grid">
+        <Button onAction="#num" text="7" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <Button onAction="#num" text="8" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+        <Button onAction="#num" text="9" GridPane.columnIndex="2" GridPane.rowIndex="0"/>
+        <Button onAction="#num" text="4" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <Button onAction="#num" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <Button onAction="#num" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+        <Button onAction="#num" text="1" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <Button onAction="#num" text="2" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        <Button onAction="#num" text="3" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+        <Button onAction="#num" text="0" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <Button onAction="#clear" text="C" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+        <Button onAction="#eval" text="=" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+        <Button onAction="#op" text="+" GridPane.columnIndex="3" GridPane.rowIndex="0"/>
+        <Button onAction="#op" text="-" GridPane.columnIndex="3" GridPane.rowIndex="1"/>
+        <Button onAction="#op" text="×" GridPane.columnIndex="3" GridPane.rowIndex="2"/>
+        <Button onAction="#op" text="÷" GridPane.columnIndex="3" GridPane.rowIndex="3"/>
+    </GridPane>
+</VBox>
