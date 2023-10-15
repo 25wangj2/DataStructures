@@ -64,6 +64,7 @@ public class LinkedList<T> implements List<T> {
             Node node = walkTo(index - 1);
             node.next = new Node(element, node.next, node);
         }
+        size++;
     }
     @Override
     public boolean add(T element) {
